@@ -1,0 +1,21 @@
+{
+  "name": "minafi-template",
+  "authors": [
+    "Adam Fortuna <adam@fortuna.name>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "bootstrap": "git@github.com:twbs/bootstrap.git#v4-dev"
+  }
+}

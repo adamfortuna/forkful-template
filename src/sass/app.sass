@@ -1,0 +1,33 @@
+@import 'config/variables'
+@import '../components/bootstrap/scss/bootstrap-flex'
+@import '../components/font-awesome/scss/font-awesome'
+
+@import 'components/article'
+@import 'components/aside'
+@import 'components/colors'
+@import 'components/dropdown'
+@import 'components/jumbotron'
+@import 'components/latest-article'
+@import 'components/navbar'
+
+img
+  max-width: 100%
+
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+  color: #555
+
+
+// Move over 2columns and allow for 12 columns of width
+.full-width
+  margin-left: -26%
+  width: 156%
+
+
+.articles--dropdown
+  &:hover
+    .dropdown-menu
+      display: block
+
+.welcome
+  margin: 2rem auto 3rem
