@@ -3,70 +3,32 @@
 @import '../components/font-awesome/scss/font-awesome'
 
 @import 'components/navbar'
-
-@media screen and (min-width:768px)
-  .navbar-brand-centered
-    position: absolute
-    left: 45%
-    display: block
-    width: 300px
-    text-align: center
-  .navbar>.container .navbar-brand-centered,
-  .navbar>.container-fluid .navbar-brand-centered
-      margin-left: -80px
+@import 'components/featured-posts'
 
 
-.navbar-brand
-  margin-top: -1.6rem
-.nav-brand--lead
-  font-size: 1rem
-  padding-bottom: 0
-  margin-bottom: 0
-  color: #666
+.content
+  margin-top: 650px
 
-.navbar
-  border-bottom: 3px solid rgba(255, 131, 5, 0.3)
-//
-.nav--mainnav
-  margin-top: 1rem
-
-  a.nav-link
-    padding: 0.6rem
-    font-weight: 700
-    border-bottom: 3px solid transparent
-    &:hover
-      border-bottom: 3px solid $brand-primary
-//
-// .nav-brand
-//   margin: 0 auto
-//   display: inline-block
-//
-// .nav-brand--title
-//   font-size: 2rem
-//
-//
-// .nav--subnav
-//   position: absolute
-//   width: 100%
-//   bottom: -45px
-//   background-color: rgba(255, 131, 5, 0.1)
-//
-.header--nav
-  background-color: rgba(255,255,255,0.7)
-  .container
-    position: relative
-//
-.header--image
-  position: absolute
-  top: 0
-  height: 700px
-  overflow: hidden
-  figure
-    width: 100%
-    text-align: center
-    overflow: hidden
+.header--underline
+  border-bottom: 2px solid $brand-primary
+  display: inline-block
+  margin-bottom: 0.8rem
+.news
   img
-    position: relative
-    left: 50%
-    transform: translate(-50%,-10%)
     max-width: 100%
+  .card-img-overlay
+    color: #eee
+
+.card-columns
+  @include media-breakpoint-only(lg)
+    column-count: 4
+  @include media-breakpoint-only(xl)
+    column-count: 5
+
+.newsletter--form
+  background-color: $brand-primary-light
+  border: 1px solid transparent
+  border-radius: 4px
+  padding: 6px
+.newsletter--submit
+  margin-left: 12px
