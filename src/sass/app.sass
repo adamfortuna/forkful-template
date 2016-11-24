@@ -2,32 +2,71 @@
 @import '../components/bootstrap/scss/bootstrap-flex'
 @import '../components/font-awesome/scss/font-awesome'
 
-@import 'components/article'
-@import 'components/aside'
-@import 'components/colors'
-@import 'components/dropdown'
-@import 'components/jumbotron'
-@import 'components/latest-article'
 @import 'components/navbar'
 
-img
-  max-width: 100%
-
-h1, h2, h3, h4, h5, h6
-  font-weight: bold
-  color: #555
-
-
-// Move over 2columns and allow for 12 columns of width
-.full-width
-  margin-left: -26%
-  width: 156%
+@media screen and (min-width:768px)
+  .navbar-brand-centered
+    position: absolute
+    left: 45%
+    display: block
+    width: 300px
+    text-align: center
+  .navbar>.container .navbar-brand-centered,
+  .navbar>.container-fluid .navbar-brand-centered
+      margin-left: -80px
 
 
-.articles--dropdown
-  &:hover
-    .dropdown-menu
-      display: block
+.navbar-brand
+  margin-top: -1.6rem
+.nav-brand--lead
+  font-size: 1rem
+  padding-bottom: 0
+  margin-bottom: 0
+  color: #666
 
-.welcome
-  margin: 2rem auto 3rem
+.navbar
+  border-bottom: 3px solid rgba(255, 131, 5, 0.3)
+//
+.nav--mainnav
+  margin-top: 1rem
+
+  a.nav-link
+    padding: 0.6rem
+    font-weight: 700
+    border-bottom: 3px solid transparent
+    &:hover
+      border-bottom: 3px solid $brand-primary
+//
+// .nav-brand
+//   margin: 0 auto
+//   display: inline-block
+//
+// .nav-brand--title
+//   font-size: 2rem
+//
+//
+// .nav--subnav
+//   position: absolute
+//   width: 100%
+//   bottom: -45px
+//   background-color: rgba(255, 131, 5, 0.1)
+//
+.header--nav
+  background-color: rgba(255,255,255,0.7)
+  .container
+    position: relative
+//
+.header--image
+  position: absolute
+  top: 0
+  height: 700px
+  overflow: hidden
+  figure
+    width: 100%
+    text-align: center
+    overflow: hidden
+  img
+    position: relative
+    left: 50%
+    transform: translate(-50%,-10%)
+    max-width: 100%

@@ -63,6 +63,7 @@ gulp.task('serve', ['sass', 'js'], function() {
 
 gulp.task('watch', ['serve'], function() {
   gulp.watch('./src/sass/**/*.sass', ['sass']);
+  gulp.watch('./src/js/**/*.js', ['js']);
   gulp.watch('public/css/app.css', sync.reload)
   gulp.watch('public/index.html', sync.reload)
 })
