@@ -7,47 +7,55 @@
     text-align: center
   .navbar>.container .navbar-brand-centered,
   .navbar>.container-fluid .navbar-brand-centered
-      margin-left: -80px
+      margin-left: -130px
 
-
-.navbar-brand
-  margin-top: -1.6rem
-.nav-brand--lead
-  font-size: 1rem
-  padding-bottom: 0
-  margin-bottom: 0
-  color: #666
 
 .navbar
   border-bottom: 3px solid $brand-primary-light
+  background-color: rgba(255,255,255,0.85)
   z-index: 999
+  .container
+    position: relative
+.navbar-brand
+  margin-top: -0.6rem
+  a
+    &:hover
+      text-decoration: none
+      border-bottom: 3px solid $brand-primary
 
+// Nav list wrapper
 .nav--mainnav
-  margin-top: 1rem
-
   a.nav-link
     padding: 0.6rem
     font-weight: 700
     border-bottom: 3px solid transparent
     &:hover
       border-bottom: 3px solid $brand-primary
-//
-// .nav-brand
-//   margin: 0 auto
-//   display: inline-block
-//
-// .nav-brand--title
-//   font-size: 2rem
-//
-//
-// .nav--subnav
-//   position: absolute
-//   width: 100%
-//   bottom: -45px
-//   background-color: rgba(255, 131, 5, 0.1)
-//
-.header--nav
-  background-color: rgba(255,255,255,0.8)
-  .container
-    position: relative
-//
+
+.nav-maps--menu
+  min-width: 733px
+  left: -200px
+
+.nav-maps--bestof
+  min-width: 389px
+  left: -100px
+
+.nav-maps--bestof,
+.nav-maps--menu
+  &.dropdown-menu
+    padding-top: 0
+    h4
+      font-weight: bold
+      font-size: 1.4rem
+      padding: 0.4rem 0 0.4rem 1rem
+      border-bottom: 3px solid $brand-primary
+      color: $gray-dark
+      background-color: $brand-primary-light
+    .dropdown-item
+      border-bottom: 2px solid transparent
+      &:hover
+        border-bottom: 2px solid $brand-primary
+
+.dropdown-group
+  background-color: #fff
+  float: left

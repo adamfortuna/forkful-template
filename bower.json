@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "font-awesome": "^4.6.3",
-    "bootstrap": "git@github.com:twbs/bootstrap.git#v4-dev"
+    "bootstrap": "git@github.com:twbs/bootstrap.git#v4-dev",
+    "instafeed.js": "^1.4.1"
   }
 }

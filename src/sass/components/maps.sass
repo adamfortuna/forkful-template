@@ -1,0 +1,29 @@
+.content-maps
+  margin-top: 2rem
+.maps--cards
+  @include media-breakpoint-only(lg)
+    column-count: 4
+  @include media-breakpoint-only(xl)
+    column-count: 4
+  .card
+    position: relative
+    .card-img-overlay
+      padding: 0
+      background-color: rgba(255,255,255,0.85)
+      h4
+        display: inline-block
+        border-bottom: 3px solid transparent
+        color: $gray-dark
+      p
+        color: $gray
+      &:hover
+        background-color: rgba(255,255,255,0.95)
+        text-decoration: none
+        h4
+          border-bottom: 3px solid $brand-primary
+    i
+      color: $brand-primary
+      font-size: 4rem
+      top: 0
+      right: 10px
+      position: absolute

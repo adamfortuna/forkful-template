@@ -3,8 +3,12 @@
 @import '../components/font-awesome/scss/font-awesome'
 
 @import 'components/navbar'
+@import 'components/best'
 @import 'components/featured-posts'
+@import 'components/featured-article'
 @import 'components/footer'
+@import 'components/maps'
+@import 'components/news'
 
 html
   max-height: 100%
@@ -15,17 +19,7 @@ html
   border-bottom: 2px solid $brand-primary
   display: inline-block
   margin-bottom: 0.8rem
-.news
-  img
-    max-width: 100%
-  .card-img-overlay
-    color: #eee
 
-.card-columns
-  @include media-breakpoint-only(lg)
-    column-count: 4
-  @include media-breakpoint-only(xl)
-    column-count: 5
 
 .newsletter--form
   background-color: $brand-primary-light
@@ -34,3 +28,8 @@ html
   padding: 6px
 .newsletter--submit
   margin-left: 12px
+
+
+.instafeed
+  margin: 0
+  padding: 0

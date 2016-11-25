@@ -1,26 +1,76 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/adam/.nvm/versions/node/v5.5.0/bin/node',
 1 verbose cli   '/Users/adam/.nvm/versions/node/v5.5.0/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'instafeed' ]
 2 info using npm@3.3.12
 3 info using node@v5.5.0
-4 verbose stack Error: missing script: start
-4 verbose stack     at run (/Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/lib/run-script.js:147:19)
-4 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/lib/run-script.js:57:5
-4 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
-4 verbose stack     at checkBinReferences_ (/Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
-4 verbose stack     at final (/Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
-4 verbose stack     at then (/Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
-4 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
-4 verbose stack     at tryToString (fs.js:414:3)
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:401:12)
-5 verbose cwd /Users/adam/code/personal/forkful-header
-6 error Darwin 15.6.0
-7 error argv "/Users/adam/.nvm/versions/node/v5.5.0/bin/node" "/Users/adam/.nvm/versions/node/v5.5.0/bin/npm" "start"
-8 error node v5.5.0
-9 error npm  v3.3.12
-10 error missing script: start
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData instafeed
+8 silly fetchNamedPackageData instafeed
+9 silly mapToRegistry name instafeed
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/instafeed
+13 verbose request uri https://registry.npmjs.org/instafeed
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 4:03:35 PM
+16 verbose request id 26a80d81d5128b4f
+17 http request GET https://registry.npmjs.org/instafeed
+18 http 200 https://registry.npmjs.org/instafeed
+19 verbose headers { server: 'nginx/1.10.1',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'last-modified': 'Wed, 24 Feb 2016 03:07:39 GMT',
+19 verbose headers   etag: 'W/"56cd1e7b-19b"',
+19 verbose headers   'content-encoding': 'gzip',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '249',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Thu, 24 Nov 2016 21:03:35 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-atl6248-ATL',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1480021415.401293,VS0,VE54',
+19 verbose headers   vary: 'Accept-Encoding' }
+20 silly get cb [ 200,
+20 silly get   { server: 'nginx/1.10.1',
+20 silly get     'content-type': 'application/json',
+20 silly get     'last-modified': 'Wed, 24 Feb 2016 03:07:39 GMT',
+20 silly get     etag: 'W/"56cd1e7b-19b"',
+20 silly get     'content-encoding': 'gzip',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '249',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Thu, 24 Nov 2016 21:03:35 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-atl6248-ATL',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1480021415.401293,VS0,VE54',
+20 silly get     vary: 'Accept-Encoding' } ]
+21 verbose get saving instafeed to /Users/adam/.npm/registry.npmjs.org/instafeed/.cache.json
+22 verbose stack TypeError: Cannot convert undefined or null to object
+22 verbose stack     at Function.keys (native)
+22 verbose stack     at pickVersionFromRegistryDocument (/Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/lib/fetch-package-metadata.js:121:29)
+22 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+22 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+22 verbose stack     at saved (/Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+22 verbose stack     at /Users/adam/.nvm/versions/node/v5.5.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+22 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+23 verbose cwd /Users/adam/code/personal/forkful-header
+24 error Darwin 15.6.0
+25 error argv "/Users/adam/.nvm/versions/node/v5.5.0/bin/node" "/Users/adam/.nvm/versions/node/v5.5.0/bin/npm" "install" "--save" "instafeed"
+26 error node v5.5.0
+27 error npm  v3.3.12
+28 error Cannot convert undefined or null to object
+29 error If you need help, you may report this error at:
+29 error     <https://github.com/npm/npm/issues>
+30 verbose exit [ 1, true ]

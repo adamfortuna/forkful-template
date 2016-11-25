@@ -1,0 +1,18 @@
+.best--img-link
+  &:after
+    content: '\A'
+    position: absolute
+    width: 100%
+    height: 250px
+    top: 0
+    left: 0
+    background: rgba(255,255,255,0.6)
+    opacity: 0
+    transition: all 0.6s
+    -webkit-transition: all 0.6s
+.best
+  .card
+    &:hover
+      .best--img-link
+        &:after
+          opacity: 1
