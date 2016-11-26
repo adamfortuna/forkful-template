@@ -8748,8 +8748,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 1.4rem; }
 
 .news .card {
-  padding: 10px;
-  overflow: show; }
+  padding: 10px; }
   .news .card .badge-new {
     font-size: 0.8rem;
     top: -12px;
@@ -8792,15 +8791,68 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .news .card:hover .news--img-link:after {
     opacity: 1; }
 
-.img--wrapper:after {
-  content: '\A';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.6);
-  opacity: 0;
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s; }
+@media (min-width: 576px) and (max-width: 767px) {
+  .content--reviews .card-columns {
+    column-count: 1; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content--reviews .card-columns {
+    column-count: 1; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content--reviews .card-columns {
+    column-count: 2; } }
+
+@media (min-width: 1200px) {
+  .content--reviews .card-columns {
+    column-count: 2; } }
+
+.content--reviews .card img {
+  width: 260px;
+  height: 200px; }
+
+.content--reviews .card .badge-new {
+  font-size: 0.8rem;
+  top: -12px;
+  right: -12px; }
+
+.content--reviews .card .card-block {
+  padding: 0.6rem; }
+
+.content--reviews .card h4 {
+  font-size: 1.4rem; }
+
+.content--reviews .card .lead {
+  color: #818a91;
+  font-size: 0.8rem; }
+
+.content--reviews .card p {
+  font-size: 1rem; }
+
+.reviews--read-more {
+  font-size: 0.8rem; }
+
+.reviews--title {
+  position: relative; }
+  .reviews--title h4,
+  .reviews--title p {
+    margin-right: 20px; }
+  .reviews--title .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem; }
+
+.reviews--img-link:after {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 180px;
+  height: 120px; }
+
+.content--reviews .card:hover {
+  background-color: rgba(255, 131, 5, 0.15); }
+  .content--reviews .card:hover .reviews--img-link:after {
+    opacity: 1; }
 
 .badge-new {
   backface-visibility: hidden;
@@ -8812,6 +8864,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   background-color: #FF8305;
   text-transform: uppercase;
   border: 3px solid rgba(255, 131, 5, 0.3) !important; }
+
+.card-img-left {
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px); }
+
+.card-img-right {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px); }
 
 html {
   max-height: 100%; }
