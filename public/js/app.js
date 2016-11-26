@@ -7407,9 +7407,13 @@ $(function () {
   $('.dropdown-toggle').dropdown();
 
   $('ul.nav li.dropdown').hover(function () {
-    $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+    if (+$('body').width() > 992) {
+      $(this).addClass('active');
+    }
   }, function () {
-    $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
+    if (+$('body').width() > 992) {
+      $(this).removeClass('active');
+    }
   });
 });
 

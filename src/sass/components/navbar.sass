@@ -21,46 +21,50 @@
   a
     &:hover
       text-decoration: none
+      padding-bottom: 7px
       border-bottom: 3px solid $brand-primary
+.nav-link
+  font-weight: bold
 
-// Nav list wrapper
-.nav--mainnav
-  a.nav-link
-    padding: 0.6rem
-    font-weight: 700
-    border-bottom: 3px solid transparent
-    &:hover
-      border-bottom: 3px solid $brand-primary
-
-.nav-maps--menu
-  min-width: 635px
-  left: -200px
-
-.nav-maps--bestof
-  min-width: 394px
-  left: -100px
-
-.nav-maps--bestof,
-.nav-maps--menu
-  &.dropdown-menu
-    padding-top: 6px
-    h4
-      font-weight: bold
-      font-size: 1.4rem
-      padding: 0.4rem 0
-      margin-left: 1rem
-      display: inline-block
-      border-bottom: 3px solid $brand-primary
-      color: $gray
-      // background-color: $brand-primary-light
-    .dropdown-item
-      border-bottom: 3px solid transparent
-      border-radius: 2px
-      border: 1px solid transparent
+@media (min-width: 992px)
+  .nav--mainnav
+    a.nav-link
+      padding: 0.6rem
+      font-weight: 700
       border-bottom: 3px solid transparent
       &:hover
         border-bottom: 3px solid $brand-primary
 
-.dropdown-group
-  background-color: #fff
-  float: left
+  .nav-maps--menu
+    min-width: 650px
+    padding-left: 10px
+    left: -200px
+
+  .nav-maps--bestof
+    min-width: 404px
+    padding-left: 10px
+    left: -100px
+  .nav-maps--bestof,
+  .nav-maps--menu
+    &.dropdown-menu
+      padding-top: 6px
+      h4
+        font-weight: bold
+        font-size: 1.4rem
+        padding: 0.4rem 0
+        margin-left: 1rem
+        display: inline-block
+        border-bottom: 3px solid $brand-primary
+        color: $gray
+        // background-color: $brand-primary-light
+      .dropdown-item
+        border-bottom: 3px solid transparent
+        border-radius: 2px
+        border: 1px solid transparent
+        border-bottom: 3px solid transparent
+        &:hover
+          border-bottom: 3px solid $brand-primary
+
+  .dropdown-group
+    background-color: #fff
+    float: left

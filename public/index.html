@@ -28,7 +28,7 @@
 
 
       <div class="collapse navbar-toggleable-md nav--mainnav" id="navbarResponsive">
-        <ul class="nav navbar-nav ">
+        <ul class="nav navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">News &amp; Events</a>
           </li>
@@ -36,7 +36,7 @@
             <a class="nav-link" href="#">Reviews</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maps</a>
+            <a class="nav-link dropdown-toggle" href="#" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Food Maps</a>
             <div class="dropdown-menu nav-maps--menu" aria-labelledby="supportedContentDropdown">
               <div class='dropdown-group'>
                 <h4>Orlando Area</h4>
@@ -44,7 +44,7 @@
                 <a class="dropdown-item" href="#">Altamonte Springs</a>
                 <a class="dropdown-item" href="#">Baldwin Park</a>
                 <a class="dropdown-item" href="#">Downtown</a>
-                <a class="dropdown-item" href="#">Florida Mall Area</a>
+                <a class="dropdown-item" href="#">Florida Mall Area <i class="fa fa-asterisk" aria-hidden="true"></i></a>
                 <a class="dropdown-item" href="#">International Drive</a>
                 <a class="dropdown-item" href="#">Kissimmee</a>
                 <a class="dropdown-item" href="#">Mall at Millenia Area</a>
@@ -73,7 +73,7 @@
           </li>
         </ul>
 
-        <ul class="nav navbar-nav navbar-right float-right">
+        <ul class="nav navbar-nav navbar-right float-lg-right">
           <li class="nav-item">
             <a class="nav-link" href="#">Guides</a>
           </li>
@@ -124,7 +124,7 @@
         <img src='images/bulla.jpg' />
       </figure>
       <div class="carousel-caption offset-4 col-3 text-sm-left">
-        <span class="badge badge-warning">New</span>
+        <span class="badge badge-new">New</span>
         <a href='#'>
           <h3>Bulla Gastrobar is a New Winter Park Hot Spot</h3>
           <p>Contemporary bar with made-to-order sangrias, plus Spanish & Catalan small plates.</p>
@@ -173,32 +173,36 @@
 <div class='content--first'>
   <div class='container'>
     <div class='row area--meta'>
-      <div class='col-7'>
+      <div class='col-md-7'>
         <h3 class="header--underline">Stay Up to Date</h3>
 
         <div>
-          <p>Join our newsletter for exclusive Orlando deals, latest news and events.</p>
+          <p>What are you waiting for? Join our monthly newsletter for <b>exclusive Orlando deals</b>, latest news and events.</p>
 
-          <form class="form-inline newsletter--form row">
+          <form class="form-inline newsletter--form row rounded p-2">
             <input type="email" class="form-control col-xs" id="exampleInputEmail3" placeholder="Enter email">
-            <button type="submit" class="col-3 btn btn-primary newsletter--submit">Sign Up</button>
+            <button type="submit" class="col-3 col-xs-12 btn btn-primary newsletter--submit ml-2">Sign Up</button>
           </form>
 
           <p class='text-muted'>On the fence about signing up? Check out <a href='#'>last months newsletter</a>.</p>
         </div>
       </div>
-      <div class='col-4 offset-1'>
-        <h3 class="header--underline">About Forkful</h3>
-        <img src="images/about.png" alt="" class='rounded float-right'>
-        <p class='text-muted'>
-          <small>Navigate the Central Florida food scene like a local. Join Marilyn and Adam as they explore Orlando one fork at a time. <a href='#'>Read More</a></small>
+      <div class='col-md-4 offset-md-1 content-about'>
+        <div>
+          <h3 class="header--underline clearfix">About Forkful</h3>
+        </div>
+        <div class='float-right float-md-left float-lg-right ml-2'>
+          <img src="images/about.png" alt="" class='rounded' />
+          <ul class='list-inline mt-2 ml-3 content-about--social'>
+            <li class='list-inline-item'><a href='#'><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class='list-inline-item'><a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class='list-inline-item'><a href='#'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class='list-inline-item'><a href='#'><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <p>Navigate the Central Florida food scene like a local. Join Marilyn and Adam as they explore Orlando one fork at a time. <a href='#'>Read More</a>
         </p>
-        <ul class='list-inline'>
-          <li class='list-inline-item'><a href='#'><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li class='list-inline-item'><a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li class='list-inline-item'><a href='#'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li class='list-inline-item'><a href='#'><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-        </ul>
       </div>
     </div>
   </div>
@@ -214,6 +218,7 @@
           <div class="card">
             <a href='#' class='float-left news--img-link img--wrapper'><img src="images/news/bulla.jpg" alt="Card image cap" /></a>
             <div class='card-block'>
+              <span class="badge badge-new">New</span>
               <h4 class="card-title"><a href='#'>Bulla Gastropub opens in Winter Park</a></h4>
               <p class="card-text"><small class="text-muted">Posted 3 days ago</small></p>
             </div>
@@ -272,6 +277,7 @@
       <img src='images/bulla.jpg' />
       <div class="featured--callout card-img-overlay col-xs-3 offset-6">
         <a href='#'>
+          <span class="badge badge-new">New</span>
           <h4>Where to Eat at Disney Springs</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -293,6 +299,7 @@
           <div class="card">
             <a href='#' class='best--img-link img--wrapper'><img class="card-img-top img-fluid" src="images/news/bulla.jpg" alt="Card image cap" /></a>
             <div class="card-block">
+              <span class="badge badge-new">New</span>
               <h4 class="card-title">
                 <a href='#'>14 Best Pizzas in Orlando</a>
               </h4>

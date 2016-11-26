@@ -1,7 +1,6 @@
 .featured-posts
   position: absolute
   top: 0
-  max-height: 700px
   overflow: hidden
   border-bottom: 3px solid $brand-primary
   figure
@@ -13,18 +12,11 @@
     left: 50%
     transform: translate(-50%,-10%)
     max-width: 100%
+    max-height: 100%
 
 .carousel-caption,
 .featured--callout
   bottom: auto
-  .badge
-    right: 0
-    top: 0
-    font-size: 1.2rem
-    position: absolute
-    background-color: $brand-primary
-    text-transform: uppercase
-    border: 3px solid $brand-primary-light !important
   p
     color: $gray
   a
@@ -55,3 +47,32 @@
 @media (min-width: 576px)
   .carousel-caption
     top: 250px
+
+@media (max-width: 768px)
+  .featured-posts
+    top: 100px
+
+.content--first
+  margin-top: 250px
+.featured-posts
+  height: 300px
+@media (min-width: 576px)
+  .content--first
+    margin-top: 350px
+  .featured-posts
+    height: 400px
+@media (min-width: 768px)
+  .content--first
+    margin-top: 450px
+  .featured-posts
+    height: 500px
+@media (min-width: 992px)
+  .content--first
+    margin-top: 550px
+  .featured-posts
+    height: 600px
+@media (min-width: 1200px)
+  .content--first
+    margin-top: 650px
+  .featured-posts
+    height: 700px
