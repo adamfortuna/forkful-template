@@ -3,6 +3,7 @@
     padding: 10px
   img
     width: 180px
+    height: 120px
   .card-block
     margin-left: 200px
     padding: 0
@@ -14,3 +15,18 @@
       column-count: 2
     @include media-breakpoint-only(xl)
       column-count: 2
+
+
+.news--img-link
+  &:after
+    margin-top: 10px
+    margin-left: 10px
+    width: 180px
+    height: 120px
+.news
+  .card
+    &:hover
+      background-color: $brand-primary-very-light
+      .news--img-link
+        &:after
+          opacity: 1
